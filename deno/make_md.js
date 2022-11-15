@@ -1,7 +1,7 @@
 import { CSV } from "https://js.sabae.cc/CSV.js";
 import { ArrayUtil } from "https://js.sabae.cc/ArrayUtil.js";
 
-const enc = (s) => s.replace(/\(/g, "%28").replace(/\)/g, "%29");
+const enc = (s) => s.replace(/\(/g, "%28").replace(/\)/g, "%29").replace(/ /g, "%20");
 
 const data = await CSV.fetchJSON("../データ一覧.csv");
 console.log(data);
