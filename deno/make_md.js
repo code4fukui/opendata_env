@@ -10,8 +10,8 @@ const types = ArrayUtil.toUnique(data.map(d => d.種別));
 
 const md = [];
 md.push("# 鯖江市環境ハッカソン参考オープンデータ");
-md.push("- 福井県主催、鯖江市協力のハッカソン 2022/12/17-18 in Sabae");
-md.push("- [『守る環境ハッカソンin鯖江』～次世代に残そう美味しい越前ガニ～ | Peatix](https://peatix.com/event/3412028)");
+md.push("福井県主催、鯖江市協力のハッカソン 2022/12/17-18 in Sabae  ");
+md.push("[『守る環境ハッカソンin鯖江』～次世代に残そう美味しい越前ガニ～ | Peatix](https://peatix.com/event/3412028)  ");
 md.push("");
 
 md.push("## 参考オープンデータ");
