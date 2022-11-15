@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width">
+<title>鯖江市 ごみ 月別収集量</title>
+</head><body>
+
+<h1>鯖江市 ごみ 月別収集量</h1>
+<main id=main></main>
+
+<hr>
+<a href=https://github.com/code4fukui/opendata_env>src on GitHub</a><br>
+
+<script type="module">
+import { ArrayUtil } from "https://js.sabae.cc/ArrayUtil.js";
+import { create as cr } from "https://js.sabae.cc/dom.js";
+import { queryGomiAmountSabae } from "./deno/queryGomiAmountSabae.js";
+
+//import { CSV } from "https://js.sabae.cc/CSV.js";
+//const data = await CSV.fetchJSON("./gomi-amount-sabae.csv");
+const data = await queryGomiAmountSabae();
+
+const types = ArrayUtil.toUnique(data.map(d => d.type));
+const dates = ArrayUtil.toUnique(data.map(d => d.date));
+
+const sum = (data) => data.reduce((p, c) => p + parseFloat(c.amount), 0).toFixed(2);
+
+const tbl = cr("tbl", main);
+{
+  const tr = cr("tr", tbl);
+  cr("th", tr).textContent = "日付";
+  for (const type of types) {
+    cr("th", tr).textContent = type;
+  }
+  cr("th", tr).textContent = "総計";
+}
+for (const date of dates) {
+  const tr = cr("tr", tbl);
+  cr("th", tr).textContent = date;
+  const data2 = data.filter(d => d.date == date);
+  for (const type of types) {
+    const d = data2.find(d => d.date == date && d.type == type);
+    cr("td", tr).textContent = d.amount;
+  }
+  cr("td", tr).textContent = sum(data2);
+}
+{
+  const tr = cr("tr", tbl);
+  cr("th", tr).textContent = "合計";
+  for (const type of types) {
+    cr("td", tr).textContent = sum(data.filter(d => d.type == type));
+  }
+  cr("td", tr).textContent = sum(data);
+}
+</script>
+
+<style>
+table {
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+th, td {
+  white-space: nowrap;
+  font-size: 80%;
+  border: .5px solid;
+  padding: .1em .3em;
+}
+</style>
