@@ -1,6 +1,8 @@
 import { CSV } from "https://js.sabae.cc/CSV.js";
 import { ArrayUtil } from "https://js.sabae.cc/ArrayUtil.js";
 
+const enc = (s) => s.replace(/\(/g, "%28").replace(/\)/g, "%29");
+
 const data = await CSV.fetchJSON("../データ一覧.csv");
 console.log(data);
 
@@ -17,7 +19,7 @@ for (const type of types) {
   md.push("### " + type);
   const data2 = data.filter(d => d.種別 == type);
   for (const d of data2) {
-    md.push(`- [${d.内容}](${d.データ})`);
+    md.push(`- [${d.内容}](${enc(d.データ)})`);
   }
   md.push("");
 }
