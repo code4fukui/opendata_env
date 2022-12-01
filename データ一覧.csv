@@ -24,8 +24,10 @@ https://ckan.odp.jig.jp/dataset/jp-fukui-sabae-203-odp,ゴミの分別,データ
 https://ckan.odp.jig.jp/dataset/jp-fukui-sabae-935-odp,ゴミの収集日,データ,4
 https://ckan.odp.jig.jp/organization/jp-fukui-sabae,鯖江市オープンデータ,データ,4
 https://github.com/code4fukui/yesnoquiz/blob/main/zatsugami.csv,雑がみオープンデータ,データ,4
+福井県焼却施設一覧.csv,福井県焼却施設一覧,データ,4
 http://odp.jig.jp/gomisute/,ごみすてナビ,アプリ,5
 https://code4fukui.github.io/yesnoquiz/zatsugami_or_not.html,クイズ雑がみか否か,アプリ,5
 https://fukuno.jig.jp/app/odp/gomiclass.html,ごみ分別オープンデータ（鯖江市＆三島市）,アプリ,5
 https://code4fukui.github.io/gomiq/,ごみ燃やしゲーム（鯖江編）,アプリ,5
 https://code4fukui.github.io/opendata_env/gomi-amount-sabae.html,月別収集量表示アプリ(odp連動),アプリ,5
+https://code4fukui.github.io/opendata_env/incinerator-fukui.html,福井県焼却施設マップ＆一覧,アプリ,5

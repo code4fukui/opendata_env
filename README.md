@@ -1,7 +1,6 @@
 # 鯖江市環境ハッカソン参考オープンデータ
 福井県主催、鯖江市協力のハッカソン 2022/12/17-18 in Sabae  
 [『守る環境ハッカソンin鯖江』～次世代に残そう美味しい越前ガニ～ | Peatix](https://peatix.com/event/3412028)  
-データに関する不明点などは、[Issues](https://github.com/code4fukui/opendata_env/issues)へ書き込みください  
 
 ## 参考オープンデータ
 
@@ -37,6 +36,7 @@
 - [ゴミの収集日](https://ckan.odp.jig.jp/dataset/jp-fukui-sabae-935-odp)
 - [鯖江市オープンデータ](https://ckan.odp.jig.jp/organization/jp-fukui-sabae)
 - [雑がみオープンデータ](https://github.com/code4fukui/yesnoquiz/blob/main/zatsugami.csv)
+- [福井県焼却施設一覧](福井県焼却施設一覧.csv)
 
 ### アプリ
 - [ごみすてナビ](http://odp.jig.jp/gomisute/)
@@ -44,6 +44,7 @@
 - [ごみ分別オープンデータ（鯖江市＆三島市）](https://fukuno.jig.jp/app/odp/gomiclass.html)
 - [ごみ燃やしゲーム（鯖江編）](https://code4fukui.github.io/gomiq/)
 - [月別収集量表示アプリ(odp連動)](https://code4fukui.github.io/opendata_env/gomi-amount-sabae.html)
+- [福井県焼却施設マップ＆一覧](https://code4fukui.github.io/opendata_env/incinerator-fukui.html)
 
 ## ライセンス
 [オープンデータライセンス](https://github.com/code4fukui/opendata-license/) by 鯖江市
