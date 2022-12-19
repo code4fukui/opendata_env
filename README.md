@@ -37,6 +37,7 @@
 - [鯖江市オープンデータ](https://ckan.odp.jig.jp/organization/jp-fukui-sabae)
 - [雑がみオープンデータ](https://github.com/code4fukui/yesnoquiz/blob/main/zatsugami.csv)
 - [福井県焼却施設一覧](福井県焼却施設一覧.csv)
+- [守る環境ハッカソン作品集](守る環境ハッカソン作品集.csv)
 
 ### アプリ
 - [ごみすてナビ](http://odp.jig.jp/gomisute/)
