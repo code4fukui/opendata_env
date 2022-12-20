@@ -47,5 +47,8 @@
 - [月別収集量表示アプリ(odp連動)](https://code4fukui.github.io/opendata_env/gomi-amount-sabae.html)
 - [福井県焼却施設マップ＆一覧](https://code4fukui.github.io/opendata_env/incinerator-fukui.html)
 
+### アイデア
+- [ゴミ収集車の位置共有サービス](sabaehackathon-prossell-20221218.pdf)
+
 ## ライセンス
 [オープンデータライセンス](https://github.com/code4fukui/opendata-license/) by 鯖江市
